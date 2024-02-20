@@ -9,10 +9,14 @@
 
 body {
     height: 100vh;
-    background-image: url(https://img.freepik.com/free-photo/portrait-asian-person-with-pixel-art-effect_23-2150637655.jpg?w=740&t=st=1708430855~exp=1708431455~hmac=e47af50a5cec53c9c6620eafe8a417b125d080fdc54c0a608f2abf74875c5614);
+    background-image: url(https://images6.alphacoders.com/128/1288004.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .relogio {
@@ -48,4 +52,15 @@ body {
 
 .relogio span.tempo {
     font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+    .relogio {
+        flex-direction: column;
+    }
+
+    .relogio div {
+        width: 35vw;
+    }
+
 }
