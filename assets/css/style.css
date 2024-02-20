@@ -97,7 +97,7 @@ body {
 }
 
 .botoes__link:hover {
-    background-color: var(--cor-secundaria);
+    background-color: black;
 }
 
 @media (max-width: 1200px) {
