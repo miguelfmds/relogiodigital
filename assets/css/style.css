@@ -19,6 +19,18 @@ body {
     background-size: cover;
 }
 
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 58%;
+    transform: translateX(-50%);
+}
+
+.imagem-logo {
+    width: 52%;
+}
+
 .relogio {
     display: flex;
     align-items: center;
@@ -27,7 +39,8 @@ body {
     width: 550px;
     background: transparent;
     border-radius: 3px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5)
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    margin-top: 10%;
 }
 
 .relogio div {
@@ -54,7 +67,48 @@ body {
     font-size: 15px;
 }
 
+.botoes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.botoes__link {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 25%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: white;
+    border: 5px solid white;
+    background-color: #1F7DD5;
+}
+
+.botoes__link:hover {
+    background-color: var(--cor-secundaria);
+}
+
 @media (max-width: 1200px) {
+    .logo {
+        left: 55%;
+    }
+
+    .imagem-logo {
+        width: 80%;
+    }
+    
     .relogio {
         flex-direction: column;
     }
@@ -63,4 +117,11 @@ body {
         width: 35vw;
     }
 
+    .botoes {
+        position: fixed;
+    }
+
+    .botoes__link {
+        width: 50%;
+    }
 }
